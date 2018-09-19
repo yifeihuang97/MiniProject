@@ -25,10 +25,6 @@ public partial class login : System.Web.UI.Page
 
     protected void Button2_Click(object sender, EventArgs e)
     {
-        if (FormsAuthentication.Authenticate(user.Text, pass.Text))
-            FormsAuthentication.RedirectFromLoginPage(user.Text, remember.Checked);
-        else
-            Msg.Text = "Login failed. Please check your user name and password and try again.";
-
+        Response.Redirect("Register.aspx");
     }
 }
