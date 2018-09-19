@@ -20,7 +20,7 @@
 
     <script>
 
-        var graphTimer = setInterval(updateSensor, 500);
+        var graphTimer = setInterval(updateSensor, 1500);
 
         var x1 = [];
         var y1 = [];
