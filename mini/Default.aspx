@@ -14,35 +14,53 @@
       </p>
     <div id="myDiv">
     <script>
-        var graphTimer = setInterval(updateSensor, 1500);
-        var x1 = [];
+      
+        var x1 = []
         var y1 = [];
         var i;
+        var Timer = setInterval(update, 1500); // set hte timer for temperature sensor
         for (i = 0; i < 100; i++) {
-            x1.push(i);
-            y1.push(25 + Math.random());
+            x1.push(i);y1.push(25 + Math.random());
         }
         console.log(x1);
 
-        var tempTrace1 = {
+        var Trace = {
             x: x1,
             y: y1,
-            type: 'scatter'
+            name: 'lines',
+           
+            line: {
+                color: 'rgb(55, 128, 191)',
+                width: 3
+            }
+        
+        };
+        var layout = {
+            title: 'Simulation in progress',
+            width: 1000, height: 1000,
+            xaxis: {
+                title: 'Humidity',
+                showgrid: false,
+                zeroline: false
+            },
+
+            yaxis: {
+                title: 'Temperature',
+                showline: false
+            }
+
         };
 
-        var data = [tempTrace1];
-        Plotly.newPlot('myDiv', data);
+        var data = [Trace];
+        Plotly.newPlot('myDiv', data,layout);
 
-        function updateSensor() {
-            var lastTemp = 25 + Math.random();
+        function update() {
+            var next = 25 + Math.random();
 
-            tempTrace1.y.push(lastTemp);
-            tempTrace1.y.shift();
-
-            console.log(tempTrace1);
-
-            data = [tempTrace1];
-            Plotly.newPlot('myDiv', data);
+            Trace.y.push(next);Trace.y.shift();
+            console.log(Trace);
+            data = [Trace];
+            Plotly.newPlot('myDiv', data,layout);
         }
     </script>
    </div>
