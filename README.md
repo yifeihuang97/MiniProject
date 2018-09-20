@@ -56,3 +56,6 @@ Work Distribution:
 Siqi Wu is responsible for the log in UI, Registetr UI and Local Database parts of the project.
 
 Yifei Huang is responsible for the simulation and graphing part of the project.
+
+Assertion:
+Because the project is first initiated at Yifei Huang's Personal Desktop, more contribution seemed to be made by Yifei. Nevertheless the work of total project distributed evenly by two contributors. Contribution details are explained above.
