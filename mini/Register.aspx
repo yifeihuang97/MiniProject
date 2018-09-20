@@ -11,10 +11,10 @@
     <form id="form1" runat="server">
         <div>
         User:&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="user" runat="server" Width="141px"></asp:TextBox>
+        <asp:TextBox ID="user" runat="server" Width="141px" OnTextChanged="user_TextChanged"></asp:TextBox>
         <br />
         Password:&nbsp;
-        <asp:TextBox ID="pass" runat="server" Width="141px"></asp:TextBox>
+        <asp:TextBox ID="pass" runat="server" Width="141px" OnTextChanged="pass_TextChanged"></asp:TextBox>
         <br />
         <br />
             <asp:Button ID="Regiter" runat="server" onclick="register_click" Text="Register and log me in!" />
