@@ -3,7 +3,7 @@ EC463MiniProject SW
 
 The Web-Application require login or register from the user input, simulate the real-time temperature and humidity for the user.
 
-
+To Run this web app. Simply clone the repo and then navigate to the file called login.aspx. This file will lead you to sign in our website and show the simulation.
 
 
 
