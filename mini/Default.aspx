@@ -6,7 +6,7 @@
   	  <form id="form1" runat="server">
   	<h1>Temperature Sensor and Humidity Sensor Simulation</h1>
   </head>
-  <body>
+  <body style="color: #CC6699; background-color: #FFFF00">
   	<p>
     <script src="plotly-latest.min.js"></script>
       <p>

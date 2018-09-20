@@ -11,11 +11,10 @@
     <div>
     
         User:&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="user" runat="server" Width="141px"></asp:TextBox>
+        <asp:TextBox ID="user" runat="server" style="margin-left: 0px" Width="141px"></asp:TextBox>
         <br />
-        Password:&nbsp;
-        <asp:TextBox ID="pass" runat="server" Width="141px"></asp:TextBox>
-        <br />
+        Password :
+        <asp:TextBox ID="pass" runat="server"></asp:TextBox>
         <br />
         <asp:CheckBox ID="remember" runat="server" Text="Remember Me" />
         <br />
